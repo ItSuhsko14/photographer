@@ -36,11 +36,15 @@
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="about-me.html">About me</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#about">About me</a>
                       </li>
-                      <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
-                      </li> -->
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#portfolio">Portfolio</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#testimonals">Testimonals</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#faq">FAQ</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">Contacts</a>
                       </li>
                     </ul>
                   </div>
@@ -82,17 +86,24 @@
             <div class="row">
               <div class="col-md-6 col-lg-5 col-xl-4">
                 <div class="wow-outer">
-                  <h6 class="font-weight-sbold text-primary wow slideInDown">I'm Dima Litvin</h6>
+                  <h6 class="font-weight-sbold text-primary wow slideInDown">Dima Litvin</h6>
                 </div>
               </div>
               <div class="col-md-8 col-lg-7 col-xl-6">
-                <h1 class="wow-outer"><span class="font-weight-bold wow-outer"><span class="wow slideInUp">Photographer</span></span><span class="font-weight-exlight wow-outer"><span class="wow slideInUp" data-wow-delay=".1s">& retoucher</span></span><span class="font-weight-exlight wow-outer"><span class="wow slideInUp" data-wow-delay=".1s">& color editor</span></span></h1>
+                <h1 class="wow-outer"><span class="font-weight-bold wow-outer"><span class="wow slideInUp">Фотограф</span></span><span class="font-weight-exlight wow-outer"><span class="wow slideInUp" data-wow-delay=".1s">& retoucher</span></span><span class="font-weight-exlight wow-outer"><span class="wow slideInUp" data-wow-delay=".1s">& color editor</span></span></h1>
               </div>
               <div class="col-md-6 col-lg-5 col-xl-4 col-offset-1">
                 <div class="wow-outer">
-                  <h4 class="font-weight-light wow slideInUp" data-wow-delay=".2s">Based in Dnipro, Ukraie, I specialize wedding & portrait photo</h4>
+                  <h4 class="font-weight-light wow slideInUp" data-wow-delay=".2s">Based in Dnipro, Ukraine, I specialize wedding & portrait photo</h4>
                 </div>
-                <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInUp" href="#" data-wow-delay=".3s">View Portfolio</a></div>
+                <div class="wow-outer button-outer">
+                  <a 
+                    class="button button-lg button-primary button-winona wow slideInUp" 
+                    href="#portfolio" data-wow-delay=".3s"
+                  >
+                    View Portfolio
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -103,7 +114,9 @@
         <div class="container">
           <div class="row row-50">
             <div class="col-12 text-center">
-              <h3 class="section-title wow-outer"><span class="wow slideInUp">Portfolio</span></h3>
+              <h3 class="section-title wow-outer">
+                <span id="portfolio" class="wow slideInUp">Portfolio</span>
+              </h3>
             </div>
             <div class="col-12 isotope-wrap">
               <div class="isotope offset-top-2" data-isotope-layout="masonry" data-lightgallery="group" data-lg-thumbnail="false">
@@ -177,7 +190,7 @@
       <!-- Advantages and Achievements-->
       <section class="section section-lg text-center bg-default">
         <div class="container">
-          <h3 class="section-title wow-outer"><span class="wow slideInUp">About Me</span></h3>
+          <h3 class="section-title wow-outer"><span id="about" class="wow slideInUp">About Me</span></h3>
           <p class="wow-outer"><span class="text-width-1 wow slideInDown">Since 2015, I’ve been providing my clients with quality photography and retouching services. Some of my works were awarded on a national level. Below are some facts about me.</span></p>
           <div class="row row-50">
             <div class="col-6 col-md-3 wow-outer">
@@ -226,7 +239,7 @@
       <!-- Testimonials-->
       <section class="section section-lg bg-gray-100 text-center">
         <div class="container">
-          <h3 class="section-title">Testimonials</h3>
+          <h3 id="testimonals" class="section-title">Testimonials</h3>
           <div class="slick-widget-testimonials wow fadeIn">
             <div class="slick-slider carousel-child" id="child-carousel" data-for=".carousel-parent" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-sm-items="3" data-md-items="5" data-lg-items="5" data-xl-items="5" data-center-mode="true" data-slide-to-scroll="1">
               <div class="item wow-outer"><img class="wow slideInLeft" src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96"/>
@@ -312,7 +325,7 @@
         <div class="container">
           <div class="row row-50 justify-content-lg-between offset-top-1">
             <div class="col-12">
-              <h3 class="section-title text-center wow-outer"><span class="wow slideInDown">Frequently Asked Questions</span></h3>
+              <h3 class="section-title text-center wow-outer"><span id="faq" class="wow slideInDown">Frequently Asked Questions</span></h3>
             </div>
             <div class="col-lg-7 col-xl-6">
               <!-- Bootstrap collapse-->
@@ -473,7 +486,7 @@
         </div>
       </section>
       <!-- Page Footer-->
-            <footer class="section footer-standard bg-gray-700">
+            <footer id="contacts" class="section footer-standard bg-gray-700">
               <div class="footer-standard-main">
                 <div class="container">
                   <div class="row row-50">
@@ -487,33 +500,20 @@
                       <div class="box-1">
                         <h4>Contact Information</h4>
                         <ul class="list-sm">
-                          <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">2130 Fulton Street <br> Dnipro, Ukraine</a></li>
-                          <li class="object-inline"><span class="icon icon-md mdi mdi-telegram text-gray-700"></span><a class="link-default" href="tel:#">1-800-1234-678</a></li>
-                          <li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#">info@demolink.org</a></li>
+                          <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#"> Dnipro, Ukraine</a></li>
+                          <li class="object-inline"><span class="icon icon-md mdi mdi-instagram text-gray-700"></span><a class="link-default" href="https://www.instagram.com/dimalitvin_photo/">Instagram</a></li>
+                          <li class="object-inline"><span class="icon icon-md mdi mdi-telegram text-gray-700"></span><a class="link-default" href="https://t.me/DimaLitvin">Telegram</a></li>
                         </ul>
                       </div>
                     </div>
-                    <div class="col-sm-6 col-md-7 col-lg-4">
-                      <h4>Newsletter</h4>
-                      <p>Sign up to my newsletter and be the first to know about the latest news, special offers, events, and discounts.</p>
-                      <!-- RD Mailform-->
-                      <form class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
-                        <div class="form-wrap">
-                          <input class="form-input" id="subscribe-form-2-email" type="email" name="email" data-constraints="@Email @Required">
-                          <label class="form-label" for="subscribe-form-2-email">E-mail</label>
-                        </div>
-                        <div class="form-button">
-                          <button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit"><span class="icon mdi mdi-email-outline"></span></button>
-                        </div>
-                      </form>
-                    </div>
+
                   </div>
                 </div>
               </div>
               <div class="container">
                 <div class="footer-standard-aside"><a class="brand" href="index.html"><img src="images/logo-inverse-176x28.png" alt="" width="176" height="28" srcset="images/logo-inverse-352x56.png 2x"/></a>
                   <!-- Rights-->
-                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/>Design&nbsp;by&nbsp;<a href="https://www.templatemonster.com/">Templatemonster</a></p>
+                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span></span><span>&nbsp;</span><br class="d-sm-none"/>Design&nbsp;by&nbsp;<a href="https://mustdev.pp.ua/">Mustache development</a></p>
                 </div>
               </div>
             </footer>
