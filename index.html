@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Підключення шрифтів Material Design Icons через CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
@@ -28,7 +30,14 @@
                 <div class="rd-navbar-panel">
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="images/logo-default-176x28.png" alt="" width="176" height="28" srcset="images/logo-default-352x56.png 2x"/></a>
+                  <!-- RD Navbar Brand-->
+                  <a class="rd-navbar-brand" href="index.html">
+                    <!-- <img src="images/logo-default-176x28.png" alt="" width="176" height="28" srcset="images/logo-default-352x56.png 2x"/> -->
+                    <svg width="176" height="28" viewBox="0 0 176 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="176" height="28" stroke="none"/>
+                      <path d="M11.2727 27 H3.02273V3.72727H11.3409C13.6818 3.72727 15.697 4.19318 17.3864 5.125C19.0758 6.04924 20.375 7.37879 21.2841 9.11364C22.2008 10.8485 22.6591 12.9242 22.6591 15.3409C22.6591 17.7652 22.2008 19.8485 21.2841 21.5909C20.375 23.3333 19.0682 24.6705 17.3636 25.6023C15.6667 26.5341 13.6364 27 11.2727 27ZM7.94318 22.7841H11.0682C12.5227 22.7841 13.7462 22.5265 14.7386 22.0114C15.7386 21.4886 16.4886 20.6818 16.9886 19.5909C17.4962 18.4924 17.75 17.0758 17.75 15.3409C17.75 13.6212 17.4962 12.2159 16.9886 11.125C16.4886 10.0341 15.7424 9.23106 14.75 8.71591C13.7576 8.20076 12.5341 7.94318 11.0795 7.94318H7.94318V22.7841ZM26.2131 27V9.54545H31.054V27H26.2131ZM28.6449 7.29545C27.9252 7.29545 27.3078 7.05682 26.7926 6.57954C26.285 6.0947 26.0312 5.51515 26.0312 4.84091C26.0312 4.17424 26.285 3.60227 26.7926 3.125C27.3078 2.64015 27.9252 2.39773 28.6449 2.39773C29.3646 2.39773 29.9782 2.64015 30.4858 3.125C31.0009 3.60227 31.2585 4.17424 31.2585 4.84091C31.2585 5.51515 31.0009 6.0947 30.4858 6.57954C29.9782 7.05682 29.3646 7.29545 28.6449 7.29545ZM34.9318 27V9.54545H39.5455V12.625H39.75C40.1136 11.6023 40.7197 10.7955 41.5682 10.2045C42.4167 9.61364 43.4318 9.31818 44.6136 9.31818C45.8106 9.31818 46.8295 9.61742 47.6705 10.2159C48.5114 10.8068 49.072 11.6098 49.3523 12.625H49.5341C49.8902 11.625 50.5341 10.8258 51.4659 10.2273C52.4053 9.62121 53.5152 9.31818 54.7955 9.31818C56.4242 9.31818 57.7462 9.83712 58.7614 10.875C59.7841 11.9053 60.2955 13.3674 60.2955 15.2614V27H55.4659V16.2159C55.4659 15.2462 55.2083 14.5189 54.6932 14.0341C54.178 13.5492 53.5341 13.3068 52.7614 13.3068C51.8826 13.3068 51.197 13.5871 50.7045 14.1477C50.2121 14.7008 49.9659 15.4318 49.9659 16.3409V27H45.2727V16.1136C45.2727 15.2576 45.0265 14.5758 44.5341 14.0682C44.0492 13.5606 43.4091 13.3068 42.6136 13.3068C42.0758 13.3068 41.5909 13.4432 41.1591 13.7159C40.7348 13.9811 40.3977 14.3561 40.1477 14.8409C39.8977 15.3182 39.7727 15.8788 39.7727 16.5227V27H34.9318ZM69.0966 27.3295C67.983 27.3295 66.9905 27.1364 66.1193 26.75C65.2481 26.3561 64.5587 25.7765 64.0511 25.0114C63.5511 24.2386 63.3011 23.2765 63.3011 22.125C63.3011 21.1553 63.4792 20.3409 63.8352 19.6818C64.1913 19.0227 64.6761 18.4924 65.2898 18.0909C65.9034 17.6894 66.6004 17.3864 67.3807 17.1818C68.1686 16.9773 68.9943 16.8333 69.858 16.75C70.8731 16.6439 71.6913 16.5455 72.3125 16.4545C72.9337 16.3561 73.3845 16.2121 73.6648 16.0227C73.9451 15.8333 74.0852 15.553 74.0852 15.1818V15.1136C74.0852 14.3939 73.858 13.8371 73.4034 13.4432C72.9564 13.0492 72.3201 12.8523 71.4943 12.8523C70.6231 12.8523 69.9299 13.0455 69.4148 13.4318C68.8996 13.8106 68.5587 14.2879 68.392 14.8636L63.9148 14.5C64.142 13.4394 64.589 12.5227 65.2557 11.75C65.9223 10.9697 66.7822 10.3712 67.8352 9.95454C68.8958 9.5303 70.1231 9.31818 71.517 9.31818C72.4867 9.31818 73.4148 9.43182 74.3011 9.65909C75.1951 9.88636 75.9867 10.2386 76.6761 10.7159C77.3731 11.1932 77.9223 11.8068 78.3239 12.5568C78.7254 13.2992 78.9261 14.1894 78.9261 15.2273V27H74.3352V24.5795H74.1989C73.9186 25.125 73.5436 25.6061 73.0739 26.0227C72.6042 26.4318 72.0398 26.7538 71.3807 26.9886C70.7216 27.2159 69.9602 27.3295 69.0966 27.3295ZM70.483 23.9886C71.1951 23.9886 71.8239 23.8485 72.3693 23.5682C72.9148 23.2803 73.3428 22.8939 73.6534 22.4091C73.964 21.9242 74.1193 21.375 74.1193 20.7614V18.9091C73.9678 19.0076 73.7595 19.0985 73.4943 19.1818C73.2367 19.2576 72.9451 19.3295 72.6193 19.3977C72.2936 19.4583 71.9678 19.5152 71.642 19.5682C71.3163 19.6136 71.0208 19.6553 70.7557 19.6932C70.1875 19.7765 69.6913 19.9091 69.267 20.0909C68.8428 20.2727 68.5133 20.5189 68.2784 20.8295C68.0436 21.1326 67.9261 21.5114 67.9261 21.9659C67.9261 22.625 68.1648 23.1288 68.642 23.4773C69.1269 23.8182 69.7405 23.9886 70.483 23.9886ZM90.179 27V3.72727H95.0994V22.9432H105.077V27H90.179ZM108.244 27V9.54545H113.085V27H108.244ZM110.676 7.29545C109.956 7.29545 109.339 7.05682 108.824 6.57954C108.316 6.0947 108.062 5.51515 108.062 4.84091C108.062 4.17424 108.316 3.60227 108.824 3.125C109.339 2.64015 109.956 2.39773 110.676 2.39773C111.396 2.39773 112.009 2.64015 112.517 3.125C113.032 3.60227 113.29 4.17424 113.29 4.84091C113.29 5.51515 113.032 6.0947 112.517 6.57954C112.009 7.05682 111.396 7.29545 110.676 7.29545ZM126.247 9.54545V13.1818H115.736V9.54545H126.247ZM118.122 5.36364H122.963V21.6364C122.963 22.0833 123.031 22.4318 123.168 22.6818C123.304 22.9242 123.493 23.0947 123.736 23.1932C123.986 23.2917 124.274 23.3409 124.599 23.3409C124.827 23.3409 125.054 23.322 125.281 23.2841C125.509 23.2386 125.683 23.2045 125.804 23.1818L126.565 26.7841C126.323 26.8598 125.982 26.947 125.543 27.0455C125.103 27.1515 124.569 27.2159 123.94 27.2386C122.774 27.2841 121.751 27.1288 120.872 26.7727C120.001 26.4167 119.323 25.8636 118.838 25.1136C118.353 24.3636 118.115 23.4167 118.122 22.2727V5.36364ZM145.673 9.54545L139.571 27H134.116L128.014 9.54545H133.128L136.753 22.0341H136.935L140.548 9.54545H145.673ZM148.151 27V9.54545H152.991V27H148.151ZM150.582 7.29545C149.863 7.29545 149.245 7.05682 148.73 6.57954C148.223 6.0947 147.969 5.51515 147.969 4.84091C147.969 4.17424 148.223 3.60227 148.73 3.125C149.245 2.64015 149.863 2.39773 150.582 2.39773C151.302 2.39773 151.916 2.64015 152.423 3.125C152.938 3.60227 153.196 4.17424 153.196 4.84091C153.196 5.51515 152.938 6.0947 152.423 6.57954C151.916 7.05682 151.302 7.29545 150.582 7.29545ZM161.71 16.9091V27H156.869V9.54545H161.483V12.625H161.688C162.074 11.6098 162.722 10.8068 163.631 10.2159C164.54 9.61742 165.642 9.31818 166.938 9.31818C168.15 9.31818 169.206 9.58333 170.108 10.1136C171.009 10.6439 171.71 11.4015 172.21 12.3864C172.71 13.3636 172.96 14.5303 172.96 15.8864V27H168.119V16.75C168.127 15.6818 167.854 14.8485 167.301 14.25C166.748 13.6439 165.987 13.3409 165.017 13.3409C164.366 13.3409 163.79 13.4811 163.29 13.7614C162.797 14.0417 162.411 14.4508 162.131 14.9886C161.858 15.5189 161.718 16.1591 161.71 16.9091Z" fill="black"/>
+                    </svg>
+                  </a>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
@@ -49,7 +58,8 @@
                     </ul>
                   </div>
                   <!-- RD Navbar Search-->
-                  <div class="rd-navbar-search"><a class="nav-icon" href="#">
+                  <div class="rd-navbar-search">
+                    <a class="nav-icon" href="#">
                       <svg id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
                         <path fill="none" stroke="" stroke-miterlimit="0" d="M4.775,0.588H0.708v4.286"></path>
                         <polyline fill="none" stroke="" stroke-miterlimit="0" points="16.552,4.654 16.552,0.588 12.485,0.588 "></polyline>
@@ -71,7 +81,9 @@
                         <path fill="none" stroke="" stroke-miterlimit="10" d="M12.485,16.432"></path>
                         <path fill="none" stroke="" stroke-miterlimit="10" d="M12.485,0.905"></path>
                         <circle fill="" stroke="" stroke-miterlimit="10" cx="8.63" cy="8.193" r="0.911"> </circle>
-                      </svg></a></div>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -90,7 +102,7 @@
                 </div>
               </div>
               <div class="col-md-8 col-lg-7 col-xl-6">
-                <h1 class="wow-outer"><span class="font-weight-bold wow-outer"><span class="wow slideInUp">Фотограф</span></span><span class="font-weight-exlight wow-outer"><span class="wow slideInUp" data-wow-delay=".1s">& retoucher</span></span><span class="font-weight-exlight wow-outer"><span class="wow slideInUp" data-wow-delay=".1s">& color editor</span></span></h1>
+                <h1 class="wow-outer"><span class="font-weight-bold wow-outer"><span class="wow slideInUp">Photographer</span></span><span class="font-weight-exlight wow-outer"><span class="wow slideInUp" data-wow-delay=".1s">& retouch</span></span><span class="font-weight-exlight wow-outer"></span></h1>
               </div>
               <div class="col-md-6 col-lg-5 col-xl-4 col-offset-1">
                 <div class="wow-outer">
@@ -99,9 +111,11 @@
                 <div class="wow-outer button-outer">
                   <a 
                     class="button button-lg button-primary button-winona wow slideInUp" 
-                    href="#portfolio" data-wow-delay=".3s"
+                    href="https://www.instagram.com/dimalitvin_photo/"
+                    target="_blank"
+                    data-wow-delay=".3s"
                   >
-                    View Portfolio
+                    View Instagram&nbsp;<i class="mdi mdi-instagram"></i>
                   </a>
                 </div>
               </div>
@@ -126,7 +140,15 @@
                                   <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="images/gallery-masonry-1-370x256.jpg" alt="" width="370" height="256"/>
                                     <div class="thumbnail-corporate-caption">
                                       <p class="thumbnail-corporate-title"><a href="#">Mary Williams</a></p>
-                                      <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="images/gallery-original-1.jpg" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                                      <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p>
+                                        <a 
+                                          class="thumbnail-corporate-link" 
+                                          href="images/gallery-original-1.jpg" 
+                                          data-lightgallery="item"
+                                        >
+                                          <span class="icon mdi mdi-magnify"></span>
+                                          <span class="icon mdi mdi-magnify"></span>
+                                        </a>
                                     </div>
                                     <div class="thumbnail-corporate-dummy"></div>
                                   </article>
@@ -441,50 +463,7 @@
           </div>
         </div>
       </section>
-      <!-- Latest Blog Posts-->
-      <section class="section section-lg bg-gray-100 text-center">
-        <div class="container">
-          <h3 class="section-title wow-outer"><span class="wow slideInDown">Latest Blog Posts</span></h3>
-          <div class="row row-50">
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Post Classic-->
-              <article class="post-classic wow slideInLeft"><a class="post-classic-media" href="#"><img src="images/sidebar-blog-1-370x264.jpg" alt="" width="370" height="264"/></a>
-                <ul class="post-classic-meta">
-                  <li><a class="button-winona" href="#">News</a></li>
-                  <li>
-                    <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
-                  </li>
-                </ul>
-                <h4 class="post-classic-title"><a href="#">Top 10 Essential Photography Tips for Beginners</a></h4>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Post Classic-->
-              <article class="post-classic wow slideInLeft" data-wow-delay=".05s"><a class="post-classic-media" href="#"><img src="images/sidebar-blog-2-370x264.jpg" alt="" width="370" height="264"/></a>
-                <ul class="post-classic-meta">
-                  <li><a class="button-winona text-red" href="#">Innovations</a></li>
-                  <li>
-                    <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
-                  </li>
-                </ul>
-                <h4 class="post-classic-title"><a href="#">Benefits of Using Drones in Aerial Photography</a></h4>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Post Classic-->
-              <article class="post-classic wow slideInLeft" data-wow-delay=".1s"><a class="post-classic-media" href="#"><img src="images/sidebar-blog-3-370x264.jpg" alt="" width="370" height="264"/></a>
-                <ul class="post-classic-meta">
-                  <li><a class="button-winona text-green" href="#">Tips</a></li>
-                  <li>
-                    <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
-                  </li>
-                </ul>
-                <h4 class="post-classic-title"><a href="#">5 Ways to Get Great Photos Outside of the Studio</a></h4>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       <!-- Page Footer-->
             <footer id="contacts" class="section footer-standard bg-gray-700">
               <div class="footer-standard-main">
@@ -501,8 +480,8 @@
                         <h4>Contact Information</h4>
                         <ul class="list-sm">
                           <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#"> Dnipro, Ukraine</a></li>
-                          <li class="object-inline"><span class="icon icon-md mdi mdi-instagram text-gray-700"></span><a class="link-default" href="https://www.instagram.com/dimalitvin_photo/">Instagram</a></li>
-                          <li class="object-inline"><span class="icon icon-md mdi mdi-telegram text-gray-700"></span><a class="link-default" href="https://t.me/DimaLitvin">Telegram</a></li>
+                          <li class="object-inline"><span class="icon icon-md mdi mdi-instagram text-gray-700"></span><a class="link-default" target="_blank" href="https://www.instagram.com/dimalitvin_photo/">Instagram</a></li>
+                          <li class="object-inline"><span class="icon icon-md mdi mdi-telegram text-gray-700"></span><a class="link-default" target="_blank" href="https://t.me/DimaLitvin">Telegram</a></li>
                         </ul>
                       </div>
                     </div>
